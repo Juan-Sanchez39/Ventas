@@ -1,0 +1,9 @@
+<?php
+    session_start();
+    $cnx=mysqli_connect(
+        'localhost',
+        'root',
+        '',
+        'ventas'
+    );
+?>
