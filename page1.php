@@ -308,8 +308,8 @@ include("bd.php");
                             ?>
                         </td>
                         <td align="center">
-                            <a href="eliminar.php?idCat=<?php echo $row['CategoryID']; ?>"><img src="resources/eliminar.png" width="25"></a>
-                            <a href="actualizar.php?idCat=<?php echo $row['CategoryID']; ?>"><img src="resources/actualizar.png" width="25"></a>
+                            <a href="eliminar.php?idCat=<?php echo $row['CategoryID']; ?>"><img src="resources/eliminar.png" width="30"></a>
+                            <a href="actualizar.php?idCat=<?php echo $row['CategoryID']; ?>"><img src="resources/actualizar.png" width="30"></a>
                         </td>
                     </tr>
                 <?php
@@ -432,10 +432,10 @@ include("bd.php");
                         </td>
                         <td align="center">
                             <a href="eliminar.php?idCust=<?php echo $row['CustomerID']; ?>">
-                                <img src="resources/eliminar.png" width="25">
+                                <img src="resources/eliminar.png" width="30">
                             </a>
                             <a href="actualizar.php?idCust=<?php echo $row['CustomerID']; ?>">
-                                <img src="resources/actualizar.png" width="25">
+                                <img src="resources/actualizar.png" width="30">
                             </a>
                         </td>
                     </tr>
@@ -607,10 +607,10 @@ include("bd.php");
                         </td>
                         <td align="center">
                             <a href="eliminar.php?idE=<?php echo $row['EmployeeID']; ?>">
-                                <img src="resources/eliminar.png" width="25">
+                                <img src="resources/eliminar.png" width="30">
                             </a>
                             <a href="actualizar.php?idE=<?php echo $row['EmployeeID']; ?>">
-                                <img src="resources/actualizar.png" width="25">
+                                <img src="resources/actualizar.png" width="30">
                             </a>
                         </td>
                     </tr>
@@ -686,10 +686,10 @@ include("bd.php");
                         </td>
                         <td align="center">
                             <a href="eliminar.php?idOD=<?php echo $row['OrderDetails']; ?>">
-                                <img src="resources/eliminar.png" width="25">
+                                <img src="resources/eliminar.png" width="30">
                             </a>
                             <a href="actualizar.php?idOD=<?php echo $row['OrderDetails']; ?>">
-                                <img src="resources/actualizar.png" width="25">
+                                <img src="resources/actualizar.png" width="30">
                             </a>
                         </td>
                     </tr>
@@ -844,10 +844,10 @@ include("bd.php");
                         </td>
                         <td align="center">
                             <a href="eliminar.php?idOr=<?php echo $row['OrderID']; ?>">
-                                <img src="resources/eliminar.png" width="25">
+                                <img src="resources/eliminar.png" width="30">
                             </a>
                             <a href="actualizar.php?idOr=<?php echo $row['OrderID']; ?>">
-                                <img src="resources/actualizar.png" width="25">
+                                <img src="resources/actualizar.png" width="30">
                             </a>
                         </td>
                     </tr>
@@ -962,10 +962,10 @@ include("bd.php");
                         </td>
                         <td align="center">
                             <a href="eliminar.php?idProd=<?php echo $row['ProductID']; ?>">
-                                <img src="resources/eliminar.png" width="25">
+                                <img src="resources/eliminar.png" width="30">
                             </a>
                             <a href="actualizar.php?idProd=<?php echo $row['ProductID']; ?>">
-                                <img src="resources/actualizar.png" width="25">
+                                <img src="resources/actualizar.png" width="30">
                             </a>
                         </td>
                     </tr>
@@ -1024,10 +1024,10 @@ include("bd.php");
                         </td>
                         <td align="center">
                             <a href="eliminar.php?idShip=<?php echo $row['ShipperID']; ?>">
-                                <img src="resources/eliminar.png" width="25">
+                                <img src="resources/eliminar.png" width="30">
                             </a>
                             <a href="actualizar.php?idShip=<?php echo $row['ShipperID']; ?>">
-                                <img src="resources/actualizar.png" width="25">
+                                <img src="resources/actualizar.png" width="30">
                             </a>
                         </td>
                     </tr>
@@ -1160,10 +1160,10 @@ include("bd.php");
                         </td>
                         <td align="center">
                             <a href="eliminar.php?idSupp=<?php echo $row['SupplierID']; ?>">
-                                <img src="resources/eliminar.png" width="25">
+                                <img src="resources/eliminar.png" width="30">
                             </a>
                             <a href="actualizar.php?idSupp=<?php echo $row['SupplierID']; ?>">
-                                <img src="resources/actualizar.png" width="25">
+                                <img src="resources/actualizar.png" width="30">
                             </a>
                         </td>
                     </tr>
