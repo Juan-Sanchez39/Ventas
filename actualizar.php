@@ -1,7 +1,3 @@
-<!-- ANALIZAR ERRORES
-if (!$rSeis) {
-    printf("Errormessage: %s\n", mysqli_error($cnx));
-  } -->
 <title>Gestion de Pedidos</title>
 <link rel="icon" href="resources/icon.png" type="image/x-icon">
 <style>
