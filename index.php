@@ -131,7 +131,7 @@
     $us = $_POST['user'];
     $con = $_POST['pass'];
 
-    if ($us == "Juan" && $con == "333") {
+    if ($us == "lcp" && $con == "321") {
   ?>
       <script lenguage="javascript">
         alert("Usuario y Contraseña Correcta");

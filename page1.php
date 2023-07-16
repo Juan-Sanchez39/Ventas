@@ -27,6 +27,8 @@ include("bd.php");
             -webkit-animation-direction: alternate;
             animation-direction: alternate;
             font-family: 'IBM Plex Mono', monospace;
+            background-repeat: no-repeat;
+  background-attachment: fixed;
         }
 
         @-webkit-keyframes slidein {

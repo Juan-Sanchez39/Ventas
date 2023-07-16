@@ -153,7 +153,7 @@ include('bd.php');
         }
 
         .tableContainer {
-            width: 80%;
+            width: 86%;
             float: left;
         }
 
@@ -294,10 +294,13 @@ if (isset($_GET['busquedaCat'])) {
 } elseif (isset($_GET['busquedaCust'])) {
     $busquedaCust = $_GET['busquedaCust'];
 ?>
+<div class="formContainer">
     <form action="buscar.php" method="GET">
         <input type="text" placeholder="Buscar.." name="busquedaCust" value="<?php echo $busquedaCust; ?>">
         <input type="submit">
     </form>
+    </div>
+    <div class="tableContainer">
     <table border="1" width="100%">
         <tr>
             <th>Customer ID</th>
@@ -389,14 +392,18 @@ if (isset($_GET['busquedaCat'])) {
         }
         ?>
     </table>
+    </div>
 <?php
 } elseif (isset($_GET['busquedaEmp'])) {
     $busquedaEmp = $_GET['busquedaEmp']
 ?>
+<div class="formContainer">
     <form action="buscar.php" method="GET">
         <input type="text" placeholder="Buscar.." name="busquedaEmp" value="<?php echo $busquedaEmp; ?>">
         <input type="submit">
     </form>
+    </div>
+    <div class="tableContainer">
     <table border="1" width="100%">
         <tr>
             <th>Employee ID</th>
@@ -524,14 +531,18 @@ if (isset($_GET['busquedaCat'])) {
         }
         ?>
     </table>
+    </div>
 <?php
 } elseif (isset($_GET['busquedaOrdsD'])) {
     $busquedaOrdsD = $_GET['busquedaOrdsD'];
 ?>
+<div class="formContainer">
     <form action="buscar.php" method="GET">
         <input type="text" placeholder="Buscar.." name="busquedaOrdsD" value="<?php echo $busquedaOrdsD; ?>">
         <input type="submit" class="env" value="BUSCAR">
     </form>
+    </div>
+    <div class="tableContainer">
     <table border="1" width="100%">
         <tr>
             <th>Order ID</th>
@@ -587,14 +598,18 @@ if (isset($_GET['busquedaCat'])) {
         }
         ?>
     </table>
+    </div>
 <?php
 } elseif (isset($_GET['busquedaOrd'])) {
     $busquedaOrd = $_GET['busquedaOrd'];
 ?>
+<div class="formContainer">
     <form action="buscar.php" method="GET">
         <input type="text" placeholder="Buscar.." name="busquedaOrd" value="<?php echo $busquedaOrd; ?>">
         <input type="submit" class="env" value="BUSCAR">
     </form>
+    </div>
+    <div class="tableContainer">
     <table border="1" width="100%">
         <tr>
             <th>Order ID</th>
@@ -710,15 +725,19 @@ if (isset($_GET['busquedaCat'])) {
         }
         ?>
     </table>
+    </div>
 <?php
 } elseif (isset($_GET['busquedaProduct'])) {
     $busquedaProduct = $_GET['busquedaProduct'];
 
 ?>
+<div class="formContainer">
     <form action="buscar.php" method="GET">
         <input type="text" placeholder="Buscar.." name="busquedaProduct" value="<?php echo $busquedaProduct; ?>">
         <input type="submit" class="env" value="BUSCAR">
     </form>
+    </div>
+    <div class="tableContainer">
     <table border="1" width="100%">
         <tr>
             <th>Product ID</th>
@@ -804,14 +823,18 @@ if (isset($_GET['busquedaCat'])) {
         }
         ?>
     </table>
+    </div>
 <?php
 } elseif (isset($_GET['busquedaShip'])) {
     $busquedaShip = $_GET['busquedaShip'];
 ?>
+
+<div class="formContainer">
     <form action="buscar.php" method="GET">
         <input type="text" placeholder="Buscar.." name="busquedaShip" value="<?php echo $busquedaShip; ?>">
         <input type="submit" class="env" value="BUSCAR">
-    </form>
+    </form></div>
+    <div class="tableContainer">
     <table border="1" width="100%">
         <tr>
             <th>Shipper ID</th>
@@ -855,14 +878,18 @@ if (isset($_GET['busquedaCat'])) {
         }
         ?>
     </table>
+    </div>
 <?php
 } elseif (isset($_GET['busquedaSupp'])) {
     $busquedaSupp = $_GET['busquedaSupp'];
 ?>
+<div class="formContainer">
     <form action="buscar.php" method="GET">
         <input type="text" placeholder="Buscar.." name="busquedaSupp" value="<?php echo $busquedaSupp; ?>">
         <input type="submit" class="env" value="BUSCAR">
     </form>
+    </div>
+    <div class="tableContainer">
     <table border="1" width="100%">
         <tr>
             <th>Supplier ID</th>
@@ -960,6 +987,7 @@ if (isset($_GET['busquedaCat'])) {
         }
         ?>
     </table>
+    </div>
 <?php
 }
 ?>

@@ -1,3 +1,4 @@
+<?php include('bd.php'); ?>
 <title>Gestion de Pedidos</title>
 <link rel="icon" href="resources/icon.png" type="image/x-icon">
 <style>
@@ -74,6 +75,7 @@
     -webkit-backdrop-filter: blur(3.6px);
     border: 2px solid black;
     padding: 8px;
+    margin-top: 2%;
   }
 
   .formContainer form h1 {
@@ -92,11 +94,24 @@
     font-size: large;
     color: white;
   }
+  .env {
+            background-color: rgba(0, 0, 0, 0.1);
+            font-size: small;
+            border: 2px solid black;
+            border-radius: 10px;
+            color: black;
+            padding: 4px;
+            margin-top: 13px;
+        }
+
+        .env:hover {
+            border: 2px solid white;
+            color: white;
+            box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+        }
 </style>
 <div class="center"></div>
 <?php
-include('bd.php');
-
 if (isset($_GET['idSupp'])) {
   $id = $_GET['idSupp'];
   $query4 = "SELECT * FROM suppliers WHERE SupplierID='" . $id . "'";
@@ -115,7 +130,6 @@ if (isset($_GET['idSupp'])) {
   $spF = $rowS['Fax'];
   $spH = $rowS['HomePage'];
 ?>
-
   <center>
     <div class="formContainer">
       <form action="<?= $_SERVER['PHP_SELF'] ?>" method="post">
@@ -145,7 +159,7 @@ if (isset($_GET['idSupp'])) {
         <label>Home Page</label><br>
         <input type="text" name="suppHome" value="<?php echo $spH; ?>"><br>
         <input type="hidden" name="suppIDP" value="<?php echo $spID; ?>">
-        <input type="submit" value="Enviar" name="enviarSupp">
+        <input class="env" type="submit" value="Enviar" name="enviarSupp">
       </form>
     </div>
   </center>
@@ -172,7 +186,7 @@ if (isset($_GET['idShip'])) {
         <label>Phone</label><br>
         <input type="text" name="shippersPhone" value="<?php echo $shP; ?>"><br>
         <input type="hidden" name="shIDP" value="<?php echo $shID; ?>">
-        <input type="submit" value="Enviar" name="enviarShipp">
+        <input class="env" type="submit" value="Enviar" name="enviarShipp">
       </form>
     </div>
   </center>
@@ -220,7 +234,7 @@ if (isset($_GET['idProd'])) {
         <label>Discontinued</label><br>
         <input type="text" name="prodDisc" value="<?php echo $prDis; ?>"><br>
         <input type="hidden" name="prodIDP" value="<?php echo $idPrs; ?>">
-        <input type="submit" id="boton14" value="Enviar" name="enviarProd">
+        <input class="env" type="submit" id="boton14" value="Enviar" name="enviarProd">
       </form>
     </div>
   </center>
@@ -282,7 +296,7 @@ if (isset($_GET['idOr'])) {
         <label>Ship Country</label><br>
         <input type="text" name="ordsShipCo" value="<?php echo $orSCount; ?>"><br>
         <input type="hidden" name="ordsIDP" value="<?php echo $orid; ?>">
-        <input type="submit" id="boton13" value="Enviar" name="enviarOrds"><br>
+        <input class="env" type="submit" id="boton13" value="Enviar" name="enviarOrds"><br>
       </form>
     </div>
   </center>
@@ -315,7 +329,7 @@ if (isset($_GET['idOD'])) {
         <label>Discount</label><br>
         <input type="number" name="ordDisc" value="<?php echo $dODS; ?>"><br>
         <input type="hidden" name="ordsDP" value="<?php echo $idpOrds; ?>">
-        <input type="submit" id="boton12" value="Enviar" name="enviarOrdDet">
+        <input class="env" type="submit" id="boton12" value="Enviar" name="enviarOrdDet">
       </form>
     </div>
   </center>
@@ -384,7 +398,7 @@ if (isset($_GET['idE'])) {
         <label>Reports To</label><br>
         <input type="text" name="empReports" value="<?php echo $ert; ?>"><br>
         <input type="hidden" name="empIDP" value="<?php echo $eid; ?>">
-        <input type="submit" id="boton11" value="Enviar" name="enviarEmp"><br>
+        <input class="env" type="submit" id="boton11" value="Enviar" name="enviarEmp"><br>
       </form>
     </div>
   </center>
@@ -435,7 +449,7 @@ if (isset($_GET['idCust'])) {
         <input type="text" name="custPhone" placeholder="Enter your Phone" value="<?php echo $idPho; ?>"><br>
         <label>Fax</label><br>
         <input type="text" name="custFax" placeholder="Enter your Fax" value="<?php echo $idFax; ?>"><br>
-        <input type="submit" id="boton10" value="Enviar" name="enviarCust">
+        <input class="env" type="submit" id="boton10" value="Enviar" name="enviarCust">
       </form>
     </div>
   </center>
@@ -465,7 +479,7 @@ if (isset($_GET['idCat'])) {
         <input type="text" name="catDescr" placeholder="Enter your Description" value="<?php echo $catDes; ?>"><br>
         <label>Picture</label><br>
         <input type="text" name="catPic" placeholder="Enter your Picture" value="<?php echo $catPic; ?>"><br>
-        <input type="submit" id="boton9" class="env" value="Enviar" name="enviarCat">
+        <input class="env" type="submit" id="boton9" class="env" value="Enviar" name="enviarCat">
       </form>
     </div>
   </center>

@@ -2,8 +2,8 @@
     session_start();
     $cnx=mysqli_connect(
         'localhost',
-        'root',
-        '',
-        'ventas'
+        'id20279891_jdsanchez',
+        'Ju4n-3993',
+        'id20279891_ventas'
     );
 ?>
